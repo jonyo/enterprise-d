@@ -23,7 +23,8 @@ pixels = neopixel.NeoPixel(board.A0, 4)
 # stepper = [1, 1, 1, 1]
 # r = [10, 10, 10, 10]
 
-noods = 50
+noods_brightness = 50
+noods_io = 1
 
 dir = 1
 noodDir = 1
@@ -31,6 +32,11 @@ noodDir = 1
 bright_pixel = 0
 pixel_dance_frequency = 10
 pixel_dance_count = 0
+
+# backlights
+backlight_brightness = 255
+backlight_io = 0
+
 
 while True:
     # for i in range(4):
@@ -68,14 +74,17 @@ while True:
     pixels.show()
 
     # noods control
-    aw_board.set_constant_current(1, noods)
+    aw_board.set_constant_current(noods_io, noods_brightness)
     # adjust noods power for next time
-    noods = (noods + noodDir)
+    noods_brightness = (noods_brightness + noodDir)
     # max for noods is 255
-    if (noods > 128):
+    if (noods_brightness > 128):
         noodDir = -1
-    elif (noods < 50):
+    elif (noods_brightness < 10):
         noodDir = 1
+
+    # backlights control
+    aw_board.set_constant_current(backlight_io, backlight_brightness)
 
     time.sleep(.01)
     
@@ -86,15 +95,15 @@ while True:
 
 
 backlights = 0
-noods = 0
+noods_brightness = 0
 dir = 1
 noodDir = 1
 while True:
     aw_board.set_constant_current(0, backlights)
-    aw_board.set_constant_current(1, noods)
+    aw_board.set_constant_current(1, noods_brightness)
     # n increments to increase the current from 0 to 255, then wraps around
     backlights = (backlights + dir)
-    noods = (noods + noodDir)
+    noods_brightness = (noods_brightness + noodDir)
     # max 254 here (so n only goes to 255)
     if (backlights > 254):
         dir = -1
@@ -107,9 +116,9 @@ while True:
         dir = 1
         print("hit min")
     
-    if (noods > 128):
+    if (noods_brightness > 128):
         noodDir = -1
-    elif (noods < 1):
+    elif (noods_brightness < 1):
         noodDir = 1
         
     
