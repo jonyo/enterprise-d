@@ -95,12 +95,12 @@ Locally, used `uv` for package management.
 
 Wiring to each Nacelle, these are wires going from the main body to the Nacelle.
 
-| Source Board | PIN         | Wire |
-| ------------ | ----------- | ---- |
-| RP2040       | 3.3v        | ?    |
-| RP2040       | GRD         | ?    |
-| RP2040       | A0 (GPIO26) | ?    |
-| AW9523       | LED_PIN1    | ?    |
+| Source Board | PIN         | Wire Color | To                                           |
+| ------------ | ----------- | ---------- | -------------------------------------------- |
+| RP2040       | 3.3v        | ?          | -> noods #1<br>-> noods #2<br>-> Bussard PCB |
+| RP2040       | GRD         | ?          | -> Bussard PCB                               |
+| RP2040       | A0 (GPIO26) | ?          | -> Bussard PCB                               |
+| AW9523       | LED_PIN1    | ?          | -> noods #1<br>-> noods #2                   |
 
 ### Part Wiring
 
@@ -120,3 +120,7 @@ Wired in parallel, each one:
 | 3.3V       | 3.3V Input   | red                    |
 | GRD        | GRD Input    | white                  |
 | A0         | D-IN         | yellow                 |
+
+## References
+
+https://forums.adafruit.com/viewtopic.php?t=210325
