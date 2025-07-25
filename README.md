@@ -108,10 +108,10 @@ Wiring to each Nacelle, these are wires going from the main body to the Nacelle.
 
 Wired in parallel, each one:
 
-| Input Wire | Connected To                 |
-| ---------- | ---------------------------- |
-| LED_PIN1   | Cathode - (solid side)       |
-| 3.3v       | Anode + (side with - cutout) |
+| Input Wire | Connected To                              |
+| ---------- | ----------------------------------------- |
+| LED_PIN1   | Cathode - (solid side) -> black jump wire |
+| 3.3v       | Anode + (side with - cutout)              |
 
 #### Bussard Scoop
 
