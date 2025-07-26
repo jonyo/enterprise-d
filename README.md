@@ -83,6 +83,10 @@ https://learn.adafruit.com/noods-uberguide/electrical-properties-2
 
 https://learn.adafruit.com/adafruit-aw9523-gpio-expander-and-led-driver
 
+## RP2040 Feather
+
+https://learn.adafruit.com/adafruit-feather-rp2040-pico/pinouts
+
 ## neopixels
 
 ## lib source
