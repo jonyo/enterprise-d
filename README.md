@@ -2,6 +2,14 @@
 
 Circuit Python code for my Enterprise D model
 
+## Show & Tell
+
+First "off breadboard" wire up one of the Warp Nacelles and Bussard Collector:
+
+[![Watch the video](https://img.youtube.com/vi/3sbOjKVFyHE/default.jpg)](https://youtube.com/shorts/3sbOjKVFyHE?si=TJ8HaVDSAc0v2pcG)
+
+(click for video)
+
 ## Progress
 
 ### Stardrive
