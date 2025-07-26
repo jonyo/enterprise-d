@@ -95,12 +95,12 @@ Locally, used `uv` for package management.
 
 Wiring to each Nacelle, these are wires going from the main body to the Nacelle.
 
-| Source Board | PIN         | Wire Color | To                                           |
-| ------------ | ----------- | ---------- | -------------------------------------------- |
-| RP2040       | 3.3v        | ?          | -> noods #1<br>-> noods #2<br>-> Bussard PCB |
-| RP2040       | GRD         | ?          | -> Bussard PCB                               |
-| RP2040       | A0 (GPIO26) | ?          | -> Bussard PCB                               |
-| AW9523       | LED_PIN1    | ?          | -> noods #1<br>-> noods #2                   |
+| Source Board | PIN         | Wire Color    | To                                           |
+| ------------ | ----------- | ------------- | -------------------------------------------- |
+| RP2040       | 3.3v        | brown striped | -> noods #1<br>-> noods #2<br>-> Bussard PCB |
+| RP2040       | GRD         | brown solid   | -> Bussard PCB                               |
+| RP2040       | A0 (GPIO26) | blue striped  | -> Bussard PCB                               |
+| AW9523       | LED_PIN1    | blue solid    | -> noods #1<br>-> noods #2                   |
 
 ### Part Wiring
 
